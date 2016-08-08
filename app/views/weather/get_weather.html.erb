@@ -1,0 +1,12 @@
+<form method="get" action="/">
+  <label>City:</label>
+  <input name="city" type="text">
+  <label>State:</label>
+  <input name="state" type="text">
+  <input type="submit">
+</form>
+
+
+<p>Temperature in <%= "#{@forecast.city}, #{@forecast.state}" %> is <%= @forecast.temp_f %></p>
+<p>Current Weather in <%= "#{@forecast.city}, #{@forecast.state}" %> is <%= @forecast.weather %></p>
+<img src='<%= @forecast.icon%>'
